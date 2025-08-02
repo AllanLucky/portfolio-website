@@ -1,0 +1,88 @@
+{
+    "skills": [
+        {
+            "id": "1",
+            "images": "/images/frontend.avif",
+            "title": "Frontend development",
+            "description": "Proficient in building responsive, user-centric interfaces using HTML, CSS, JavaScript, React, and Vue.js. Emphasizes performance, accessibility, and clean UI/UX design."
+        },
+        {
+            "id": "2",
+            "images": "/images/frontend11.avif",
+            "title": "Backend-development",
+            "description": "Experienced in developing scalable server-side applications using Node.js, Express, PHP, and Laravel. Skilled in building RESTful APIs, managing databases, and ensuring application security."
+        },
+        {
+            "id": "3",
+            "images": "/images/frontend2.avif",
+            "title": "Mobile Development",
+            "description": "Specialized in building native Android apps using Kotlin and Jetpack Compose. Focuses on performance, intuitive UI, and seamless integration with backend systems."
+        },
+        {
+            "id": "4",
+            "images": "/images/frontend3.avif",
+            "title": "Database Management",
+            "description": "Well-versed in designing, managing, and optimizing relational databases using MySQL and PostgreSQL. Capable of implementing efficient queries, indexing strategies, and data security best practices."
+        }
+    ],
+    "portfolio": [
+        {
+            "id": "1",
+            "image": "/images/myportfolio.avif",
+            "title": "E-Commerce Website",
+            "description": "An e-commerce web app with product listings, cart, payments using React and Laravel."
+        },
+        {
+            "id": "2",
+            "image": "/images/myportfolio2.avif",
+            "title": "Job Portal",
+            "description": "A full-stack job board where users can apply for jobs. Built with Vue.js and Node.js."
+        },
+        {
+            "id": "3",
+            "image": "/images/myportfolio3.avif",
+            "title": "Mobile Banking App",
+            "description": "Native Android banking app with secure authentication and transaction history."
+        },
+        {
+            "id": "4",
+            "image": "/images/myportfolio4.avif",
+            "title": "Student Management System",
+            "description": "Manages students, courses, and results. Built using PHP and MySQL."
+        }
+    ],
+    "testimonials": [
+        {
+            "id": "1",
+            "count": "5",
+            "image": "/images/kenda.jpg",
+            "description": "Working with Allan was a pleasure. He understood the requirements clearly and delivered beyond expectations.",
+            "author_name": "James Mwangi",
+            "author_description": "Software Engineer at Safaricom"
+        },
+        {
+            "id": "2",
+            "count": "5",
+            "image": "/images/rama.jpg",
+            "description": "Allan brings both technical skill and creativity to every project. His frontend work is clean, responsive, and user-friendly.",
+            "author_name": "Brian Otieno",
+            "author_description": "IST Alumni & UI Designer"
+        },
+        {
+            "id": "3",
+            "count": "5",
+            "image": "/images/claris.jpg",
+            "description": "His ability to solve complex backend problems quickly and effectively made our project run smoothly.",
+            "author_name": "Claris  Joyce ",
+            "author_description": "Backend Developer at Andela"
+        },
+        {
+            "id": "4",
+            "count": "4",
+            "image": "/images/tina.jpg",
+            "description": "Allan’s mobile development work was top-notch. The app performed flawlessly and exceeded our expectations.",
+            "author_name": "Tina Kazungu",
+            "author_description": "Mobile Product Manager at M-KOPA"
+        }
+    ]
+}
