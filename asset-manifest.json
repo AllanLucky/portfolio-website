@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/allan-portfolio-website/static/css/main.38924f44.css",
-    "main.js": "/allan-portfolio-website/static/js/main.1537da8c.js",
+    "main.css": "/allan-portfolio-website/static/css/main.96516e94.css",
+    "main.js": "/allan-portfolio-website/static/js/main.8081d72a.js",
     "index.html": "/allan-portfolio-website/index.html",
-    "main.38924f44.css.map": "/allan-portfolio-website/static/css/main.38924f44.css.map",
-    "main.1537da8c.js.map": "/allan-portfolio-website/static/js/main.1537da8c.js.map"
+    "main.96516e94.css.map": "/allan-portfolio-website/static/css/main.96516e94.css.map",
+    "main.8081d72a.js.map": "/allan-portfolio-website/static/js/main.8081d72a.js.map"
   },
   "entrypoints": [
-    "static/css/main.38924f44.css",
-    "static/js/main.1537da8c.js"
+    "static/css/main.96516e94.css",
+    "static/js/main.8081d72a.js"
   ]
 }
