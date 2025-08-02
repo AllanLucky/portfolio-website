@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/allan-portfolio-website/static/css/main.38924f44.css",
+    "main.js": "/allan-portfolio-website/static/js/main.1537da8c.js",
+    "index.html": "/allan-portfolio-website/index.html",
+    "main.38924f44.css.map": "/allan-portfolio-website/static/css/main.38924f44.css.map",
+    "main.1537da8c.js.map": "/allan-portfolio-website/static/js/main.1537da8c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38924f44.css",
+    "static/js/main.1537da8c.js"
+  ]
+}
