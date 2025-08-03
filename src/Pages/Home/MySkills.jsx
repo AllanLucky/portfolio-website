@@ -11,7 +11,10 @@ export default function MySkills() {
                 {data?.skills?.map((skill, index) => (
                     <div className="skill-card" key={index}>
                         <div className="skill-icon">
-                            <img src={skill.images} alt={skill.title} />
+                            <img
+                                src={`${process.env.PUBLIC_URL}/${skill.images}`}
+                                alt={skill.title}
+                            />
                         </div>
                         <h3 className="skill-title">{skill.title}</h3>
                         <p className="skill-description">{skill.description}</p>

@@ -1,5 +1,5 @@
 import React from 'react';
-import data from "../../data/index.json";
+import data from '../../data/index.json';
 import { FaStar } from 'react-icons/fa';
 
 export default function Testimonials() {
@@ -23,7 +23,7 @@ export default function Testimonials() {
 
                         <div className="testimonial--section--card--author--detail">
                             <img
-                                src={testimonial.image}
+                                src={`${process.env.PUBLIC_URL}${testimonial.image}`}
                                 alt={testimonial.author_name}
                                 className="testimonial--image"
                             />
@@ -38,4 +38,3 @@ export default function Testimonials() {
         </section>
     );
 }
-

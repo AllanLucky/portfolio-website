@@ -5,30 +5,28 @@ export default function HeroSection() {
     return (
         <section id="heroSection" className="hero--section">
             <div className="hero--section--content--box">
-                <div className="hero--section-content">
-                    <p className="section--title">I'm Allan Lucky,</p>
+                <div className="hero--section--content">
+                    <p className="section--title">Hello, I'm Allan Lucky</p>
                     <h1 className="hero--section--title">
-                        A <span className="hero--section-title--color">Full-Stack</span> Developer
+                        <span className="hero--section-title--color">Full-Stack Developer</span>
                     </h1>
-                    <p className="hero--section-description">
-                        I’m a FullStack Developer skilled in React, Vue.js, Node.js, Laravel, PHP, and Android development.
-                    </p>
-                    <p className="hero--section-description">
-                        I hold a Diploma in Software Development from IST, and I’ve built real-world projects solving meaningful problems.
-                    </p>
-                    <p className="hero--section-description">
-                        I value clean code, collaboration, and scalable solutions. Open to freelance or full-time roles — let’s connect!
+                    <p className="hero--section--description">
+                        I’m a <strong>Full-Stack Developer</strong> with a strong passion for crafting dynamic web applications that deliver exceptional user experiences. I specialize in both <strong>front-end</strong> and <strong>back-end development</strong>, ensuring seamless integration, performance, and functionality across the entire stack.
                     </p>
                 </div>
-
                 <Link to="/contact-me">
-                    <button className="btn btn-primary">Get In Touch With Me</button>
+                    <button className="btn btn-primary">Let's Work Together</button>
                 </Link>
             </div>
 
             <div className="hero--section--img">
-                <img src="/images/allan.jpg" alt="Allan Lucky" />
+                <img
+                    src={`${process.env.PUBLIC_URL}/images/allan.jpg`}
+                    alt="Portrait of Allan Lucky - Full-Stack Developer"
+                />
             </div>
         </section>
+
     );
 }
+

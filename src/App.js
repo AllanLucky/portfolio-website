@@ -1,12 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home/HomeScreen';
 import Navbar from './Pages/Home/Navbar';
 import ContactMe from './Pages/Home/ContactMe';
 import MyPortfolio from './Pages/Home/MyPortfolio';
 import AboutMe from './Pages/Home/AboutMe';
 import Testimonials from './Pages/Home/Testmonials';
-import Footer from './Pages/Home/Footer'; // ✅ Update path if needed
+import Footer from './Pages/Home/Footer';
 import './App.css';
 
 function App() {

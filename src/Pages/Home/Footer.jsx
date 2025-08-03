@@ -2,17 +2,14 @@ import React from "react";
 import { Link as RouterLink } from "react-router-dom";
 import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp, FaInstagram } from "react-icons/fa";
 
-
-
 function Footer() {
     return (
         <footer className="footer--container">
             <div className="footer--link--container">
-                <div>
-                    <img src="/images/logo.png" alt="Logo" />
+                <div className="footer--logo">
+                    AllanLucky
                 </div>
 
-                {/* Horizontal Navigation Links */}
                 <div className="footer--items">
                     <ul className="footer--nav--horizontal">
                         {[
@@ -31,23 +28,12 @@ function Footer() {
                     </ul>
                 </div>
 
-                {/* Social Icons */}
                 <div className="footer--social--icon">
-                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                        <FaGithub />
-                    </a>
-                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-                        <FaLinkedin />
-                    </a>
-                    <a href="https://web.facebook.com/" target="_blank" rel="noopener noreferrer">
-                        <FaFacebook />
-                    </a>
-                    <a href="https://wa.me/yourwhatsapplink" target="_blank" rel="noopener noreferrer">
-                        <FaWhatsapp />
-                    </a>
-                    <a href="https://www.instagram.com/luckynondanonda/" target="_blank" rel="noopener noreferrer">
-                        <FaInstagram />
-                    </a>
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+                    <a href="https://web.facebook.com/" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+                    <a href="https://wa.me/yourwhatsapplink" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
+                    <a href="https://www.instagram.com/luckynondanonda/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
                 </div>
             </div>
 
@@ -58,7 +44,6 @@ function Footer() {
                     © {new Date().getFullYear()} All rights reserved. Developed by Allan Lucky.
                 </p>
 
-                {/* Footer Legal Links */}
                 <div className="footer--legal">
                     <ul className="footer--nav--horizontal">
                         {[
@@ -80,4 +65,5 @@ function Footer() {
 }
 
 export default Footer;
+
 
