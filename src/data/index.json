@@ -2,9 +2,9 @@
     "skills": [
         {
             "id": "1",
-            "image": "/images/frontend.avif",
+            "images": "/images/frontend3.avif",
             "title": "Frontend development",
-            "description": "Proficient in building responsive, user-centric interfaces...",
+            "description": "Proficient in building responsive, user-centric interfaces using modern web technologies. Skilled in crafting pixel-perfect layouts with HTML5, CSS3, Tailwind CSS, and JavaScript frameworks like React. Experienced in implementing reusable UI components, optimizing performance for fast load times, and ensuring accessibility and cross-browser compatibility.",
             "link": "https://your-deployed-project-url.com"
         },
         {
@@ -34,7 +34,6 @@
             "description": "An e-commerce web app with product listings, cart, payments using React and Node.js.",
             "link": "https://product-management-system-tiq8.onrender.com/"
         },
-
         {
             "id": "2",
             "image": "/images/myportfolio2.avif",
