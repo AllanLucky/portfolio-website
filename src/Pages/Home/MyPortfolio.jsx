@@ -22,13 +22,14 @@ export default function MyPortfolio() {
 
                             {/* View Project Button */}
                             <a
-                                href={project.url}
+                                href={project.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="portfolio--button"
                             >
                                 View Project
                             </a>
+
                         </div>
                     ))}
                 </div>
