@@ -7,7 +7,7 @@ export default function MyPortfolio() {
             <section className="portfolio--section" id="portfolio">
                 <h2 className="section--title--box">View Projects</h2>
                 <div className="github-button-container">
-                    {/* Optional: Add a GitHub button/link here if needed */}
+                    {/* Optional: Add a link to your GitHub here */}
                 </div>
                 <div className="portfolio--grid">
                     {data.portfolio.map((project) => (
@@ -19,6 +19,16 @@ export default function MyPortfolio() {
                             />
                             <h3 className="portfolio--title">{project.title}</h3>
                             <p className="portfolio--description">{project.description}</p>
+
+                            {/* View Project Button */}
+                            <a
+                                href={project.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="portfolio--button"
+                            >
+                                View Project
+                            </a>
                         </div>
                     ))}
                 </div>
@@ -26,3 +36,4 @@ export default function MyPortfolio() {
         </>
     );
 }
+

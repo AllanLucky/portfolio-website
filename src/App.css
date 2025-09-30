@@ -167,33 +167,52 @@ h6 p {
 
 /* Responsive for screens smaller than 768px */
 @media (max-width: 768px) {
+
+    /* Show hamburger icon on mobile */
     .nav--hamburger {
         display: flex;
+        margin-left: auto;
+        /* Push hamburger to the right */
     }
 
+    /* Initially hide menu items on mobile */
     .navbar--items {
         width: 100%;
         display: none;
         flex-direction: column;
         margin-top: 15px;
+        background-color: var(--white);
+        padding: 10px 0;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     }
 
+    /* Show menu items when active class is toggled */
     .navbar--items.active {
         display: flex;
     }
 
+    /* Stack nav links vertically */
     .navbar--items>ul {
         flex-direction: column;
         gap: 20px;
         width: 100%;
         align-items: center;
+        padding: 0;
+        margin: 0;
     }
 
     .navbar--items ul>li {
         width: 100%;
         text-align: center;
     }
+
+    .navbar--items ul>li>a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
 }
+
 
 
 /*Heading One*/
@@ -246,45 +265,21 @@ text-lg {
 }
 
 
-/*Hero Section*/
-
-.section--title {
-    color: var(--heading-color);
-    font-size: 21px;
-    text-align: center;
-    font-style: normal;
-    font-weight: 00;
-    line-height: 32px;
-    display: flex;
-    align-items: flex-start;
-}
-
-.sub--title {
-    color: var(--heading-color);
-    font-size: 16px;
-    text-align: center;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px;
-}
-
-/* Hero Section */
-
+/* Hero Section (Default - desktop) */
 .hero--section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 133.333px 85.333px 133.333px;
+    padding: 133.333px 85.333px;
     align-items: center;
     justify-content: space-between;
     background-color: var(--bg-shade);
-    /* gap: 33px; */
 }
 
+/* Hero Content Box */
 .hero--section--content--box {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* gap: 32px; */
 }
 
 .hero--section--content {
@@ -294,35 +289,31 @@ text-lg {
     gap: 21.33px;
 }
 
-.hero--section--content--box>button {
-    margin-top: 21.33px;
-
-}
-
 .hero--section--title {
     font-size: 34px;
     font-weight: 700;
     line-height: 1.2;
     color: var(--heading-color);
-    align-self: stretch;
+    text-align: left;
     margin: 0;
     padding: 0;
-    text-align: left;
-    display: inline;
-
 }
 
 .hero--section-title--color {
     color: var(--primary);
+    font-weight: 700;
+    background: linear-gradient(to right, var(--primary), #4f46e5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 
 .hero--section--description {
     font-size: 24px;
     color: var(--darkblue);
     font-weight: 400;
-    margin: 0;
+    margin: 0 0 28px 0;
     line-height: 1.2;
-    margin-bottom: 28px;
 }
 
 .hero--section--img {
@@ -339,22 +330,63 @@ text-lg {
     border-radius: 50%;
     background-color: var(--darkblue);
     border: 5px solid var(--primary);
-    /* Change --primary to any variable or color you prefer */
-
 }
 
+/* Responsive: stack text and image on small screens */
+@media (max-width: 768px) {
+    .hero--section {
+        grid-template-columns: 1fr;
+        padding: 100px 20px 60px;
+        text-align: center;
+    }
+
+    .hero--section--content--box,
+    .hero--section--content {
+        align-items: center;
+    }
+
+    .hero--section--title {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .hero--section--description {
+        font-size: 18px;
+    }
+
+    .hero--section--img {
+        margin-top: 32px;
+    }
+}
+
+.section--title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #1f2937;
+    /* Dark gray for good contrast */
+    text-align: center;
+    margin-top: 120px;
+    /* Pushes below fixed navbar */
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Hero Section End Here */
 
 
 
 🏠
 
-/* ========================
-   💼 Skills Section
-=========================== */
+/* Skills Section */
 .skills-section {
+
     padding: 60px 20px;
+    padding-top: 120px;
+    margin-top: 400px;
     background-color: var(--bg-shade);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .skills-header {
@@ -439,7 +471,7 @@ text-lg {
     background-color: var(--bg-shade);
     font-family: "Roboto", sans-serif;
     gap: 40px;
-    margin-top: 40px;
+    margin-top: 100px;
 }
 
 .about-section-img {
@@ -528,7 +560,7 @@ text-lg {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
     color: #333;
 }
 
@@ -614,11 +646,29 @@ text-lg {
     transform: scale(1.05);
 }
 
+.portfolio--button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio--button:hover {
+    background-color: #0056b3;
+}
+
+
 /*Testimonials*/
 .testimonials--section {
     background-color: var(--bg-shade);
     padding: 60px 20px;
     text-align: center;
+    margin-top: 100px;
 }
 
 .portfolio--container-box {
@@ -716,15 +766,19 @@ text-lg {
 }
 
 
-/*Contact Me Style */
+/* ============================
+   General Contact Section Style
+   ============================ */
 .contact-section {
     display: flex;
-    padding: 150px 85px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 150px 85px;
     text-align: center;
     gap: 64px;
+    background-color: var(--white, #fff);
+    font-family: "Roboto", sans-serif;
 }
 
 .contact-title {
@@ -733,6 +787,9 @@ text-lg {
     color: var(--primary, #333);
 }
 
+/* ============================
+   Form Layout & Container
+   ============================ */
 .contact-form-container {
     display: grid;
     grid-template-columns: auto;
@@ -748,12 +805,14 @@ text-lg {
     row-gap: 32px;
 }
 
+/* ============================
+   Input Styles
+   ============================ */
 .contact-label {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 100%;
-    font-family: "Roboto", sans-serif;
     font-size: 16px;
     color: #222;
 }
@@ -766,7 +825,9 @@ text-lg {
     border-radius: 8px;
     background: var(--white, #fff);
     font-size: 15px;
-    font-family: "Roboto", sans-serif;
+    font-family: inherit;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .contact-textarea {
@@ -774,23 +835,28 @@ text-lg {
     min-height: 100px;
 }
 
+/* ============================
+   Submit Button
+   ============================ */
 .submit-btn {
     background-color: var(--primary, #333);
-    color: white;
+    color: #fff;
     padding: 16px 24px;
     border: none;
     border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
     font-weight: bold;
-    transition: background 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .submit-btn:hover {
     background-color: #555;
 }
 
-/* ✅ Media Query for responsiveness */
+/* ============================
+   Media Queries
+   ============================ */
 @media (max-width: 1024px) {
     .contact-form-container {
         width: 60%;
@@ -798,6 +864,10 @@ text-lg {
 }
 
 @media (max-width: 768px) {
+    .contact-section {
+        padding: 100px 40px;
+    }
+
     .contact-form-container {
         width: 80%;
     }

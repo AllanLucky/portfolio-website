@@ -2,9 +2,10 @@
     "skills": [
         {
             "id": "1",
-            "images": "/images/frontend.avif",
+            "image": "/images/frontend.avif",
             "title": "Frontend development",
-            "description": "Proficient in building responsive, user-centric interfaces using HTML, CSS, JavaScript, React, and Vue.js. Emphasizes performance, accessibility, and clean UI/UX design."
+            "description": "Proficient in building responsive, user-centric interfaces...",
+            "link": "https://your-deployed-project-url.com"
         },
         {
             "id": "2",
@@ -30,8 +31,10 @@
             "id": "1",
             "image": "/images/myportfolio.avif",
             "title": "E-Commerce Website",
-            "description": "An e-commerce web app with product listings, cart, payments using React and Laravel."
+            "description": "An e-commerce web app with product listings, cart, payments using React and Node.js.",
+            "link": "https://product-management-system-tiq8.onrender.com/"
         },
+
         {
             "id": "2",
             "image": "/images/myportfolio2.avif",

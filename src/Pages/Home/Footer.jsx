@@ -27,19 +27,16 @@ function Footer() {
                         ))}
                     </ul>
                 </div>
-
                 <div className="footer--social--icon">
-                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-                    <a href="https://web.facebook.com/" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
-                    <a href="https://wa.me/yourwhatsapplink" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
+                    <a href="https://github.com/allanlucky" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+                    <a href="https://www.linkedin.com/in/allan-lucky-6bb09427b/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+                    <a href="https://web.facebook.com/lucky.nonda.nonda" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+                    <a href="https://wa.me/254792491368" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
                     <a href="https://www.instagram.com/luckynondanonda/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
                 </div>
             </div>
-
             <hr className="divider" />
-
-            <div className="footer--content--container">
+            <div className="footer--content--conta  iner">
                 <p className="footer--content">
                     © {new Date().getFullYear()} All rights reserved. Developed by Allan Lucky.
                 </p>
